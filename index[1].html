@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Syoufi Hunting online store for hunting, outdoor and camping equipment. Cash on delivery in Lebanon."
+  >
+
+  <meta name="theme-color" content="#0b0d0c">
+
+  <title>Syoufi Hunting | Online Store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <img src="assets/images/logo.jpg" alt="Syoufi Hunting logo">
+      <div>
+        <strong>SYOUFI HUNTING</strong>
+        <span data-i18n="brandTagline">Hunting & Outdoor Store</span>
+      </div>
+    </a>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" data-i18n="home">Home</a>
+      <a href="#shop" data-i18n="shop">Shop</a>
+      <a href="#about" data-i18n="about">About</a>
+      <a href="#contact" data-i18n="contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="language-button" id="languageButton" type="button">
+        العربية
+      </button>
+
+      <button class="cart-button" id="openCartButton" type="button">
+        <span data-i18n="cart">Cart</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow" data-i18n="heroEyebrow">
+          Hunting • Outdoor • Adventure
+        </span>
+
+        <h1 data-i18n="heroTitle">
+          Gear made for the wild.
+        </h1>
+
+        <p data-i18n="heroText">
+          Shop hunting, camping and outdoor equipment with direct WhatsApp ordering and cash on delivery.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="primary-button" href="#shop" data-i18n="shopNow">
+            Shop now
+          </a>
+
+          <a
+            class="secondary-button"
+            href="https://wa.me/96170568469"
+            target="_blank"
+            rel="noopener"
+            data-i18n="contactWhatsapp"
+          >
+            Contact on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-logo-card">
+        <img src="assets/images/logo.jpg" alt="Syoufi Hunting">
+      </div>
+    </section>
+
+    <section class="service-strip">
+      <article>
+        <span>01</span>
+        <div>
+          <strong data-i18n="cashTitle">Cash on delivery</strong>
+          <p data-i18n="cashText">Pay when your order arrives.</p>
+        </div>
+      </article>
+
+      <article>
+        <span>02</span>
+        <div>
+          <strong data-i18n="supportTitle">WhatsApp support</strong>
+          <p data-i18n="supportText">Direct contact before and after ordering.</p>
+        </div>
+      </article>
+
+      <article>
+        <span>03</span>
+        <div>
+          <strong data-i18n="locationTitle">Store location</strong>
+          <p data-i18n="locationText">Open our location directly on Google Maps.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow" data-i18n="catalogue">Catalogue</span>
+          <h2 data-i18n="productsTitle">Our products</h2>
+        </div>
+
+        <div class="shop-controls">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search products"
+            data-i18n-placeholder="searchPlaceholder"
+          >
+
+          <select id="categoryFilter">
+            <option value="" data-i18n="allCategories">
+              All categories
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+      <div class="empty-message hidden" id="emptyMessage" data-i18n="emptyProducts">
+        No products found.
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-content">
+        <span class="eyebrow" data-i18n="aboutEyebrow">About us</span>
+
+        <h2 data-i18n="aboutTitle">
+          Syoufi Hunting
+        </h2>
+
+        <p data-i18n="aboutText">
+          A specialized store for hunting, outdoor, camping and adventure equipment with direct customer service and carefully selected products.
+        </p>
+
+        <a
+          class="primary-button"
+          href="https://wa.me/96170568469"
+          target="_blank"
+          rel="noopener"
+          data-i18n="askProduct"
+        >
+          Ask about a product
+        </a>
+      </div>
+
+      <div class="about-logo">
+        <img src="assets/images/logo.jpg" alt="Syoufi Hunting">
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <span class="eyebrow dark" data-i18n="contactEyebrow">
+          Contact
+        </span>
+
+        <h2 data-i18n="contactTitle">
+          Visit or contact Syoufi Hunting
+        </h2>
+
+        <p data-i18n="contactText">
+          Call us or open the store location on Google Maps.
+        </p>
+      </div>
+
+      <div class="contact-buttons">
+        <a class="dark-button" href="tel:+96170568469">
+          +961 70 568 469
+        </a>
+
+        <a
+          class="light-button"
+          href="https://www.google.com/maps?q=34.5303786,36.0887009"
+          target="_blank"
+          rel="noopener"
+          data-i18n="openMaps"
+        >
+          Open Google Maps
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/images/logo.jpg" alt="">
+    <p>
+      © <span id="year"></span> Syoufi Hunting
+    </p>
+    <a href="https://wa.me/96170568469" target="_blank" rel="noopener">
+      WhatsApp
+    </a>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h2 data-i18n="yourCart">Your cart</h2>
+
+      <button id="closeCartButton" type="button" aria-label="Close cart">
+        ×
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span data-i18n="total">Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+
+      <button class="primary-button full-width" id="checkoutButton" type="button" data-i18n="checkout">
+        Checkout
+      </button>
+    </div>
+  </aside>
+
+  <div class="modal hidden" id="checkoutModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeCheckoutButton" type="button">
+        ×
+      </button>
+
+      <h2 data-i18n="checkoutTitle">
+        Complete your order
+      </h2>
+
+      <p class="muted-text" data-i18n="checkoutText">
+        Payment method: cash on delivery.
+      </p>
+
+      <form id="checkoutForm">
+        <label>
+          <span data-i18n="fullName">Full name</span>
+          <input name="fullName" required>
+        </label>
+
+        <label>
+          <span data-i18n="phone">Phone number</span>
+          <input name="phone" type="tel" required>
+        </label>
+
+        <label>
+          <span data-i18n="area">City / Area</span>
+          <input name="area" required>
+        </label>
+
+        <label>
+          <span data-i18n="address">Delivery address</span>
+          <textarea name="address" required></textarea>
+        </label>
+
+        <label>
+          <span data-i18n="notes">Notes</span>
+          <textarea name="notes"></textarea>
+        </label>
+
+        <button class="primary-button full-width" type="submit" data-i18n="sendOrder">
+          Send order on WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
