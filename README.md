@@ -76,5 +76,8 @@ Folder: / (root)
 ## بيانات المتجر الموجودة حاليًا
 
 - WhatsApp: +961 70 568 469
+
+
+
 - Google Maps: 34.5303786, 36.0887009
 - Payment: Cash on delivery
